@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
     <link rel="stylesheet" href="style.css">
+    
+    
 
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -92,10 +94,40 @@
                             <input type="text" class="form-control" id="IdEstado" placeholder="" required>
                         </div><br>
 
-                        <button type="button" class="btn btn-success">Cadastar</button>
+                        <button type="button" class="btn btn-success" onclick="Cadastrar()"> Cadastar</button>
                     </form>
                 </div>
             </div>
+          </div>
+
+         
+
+
+
+          <!--Tabela-->
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 my-5">
+                      <h3 class="text-center"> Cliente cadastrado</h3>
+
+                      <table id="IdTabelaCliente"  style="width: 900px; margin: auto;" class="table table-hover table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">CPF/CNPJ</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">CEP</th>
+                            <th scope="col">Logradouro</th>
+                            <th scope="col">Número</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Opção</th>
+                          </tr>
+                      </table>
+
+                  </div>
+              </div>
           </div>
     
 
