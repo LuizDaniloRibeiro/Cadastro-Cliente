@@ -12,11 +12,10 @@ class Cliente
         this.bairro     = bairro;
         this.cidade     = cidade;
         this.estado     = estado;
-
     }
-
 }
 
+// variavel global 
 var clientes = [];
 
 
@@ -37,9 +36,52 @@ function Cadastrar()
     cliente.cidade     = document.getElementById("IdCidade").value; 
     cliente.estado     = document.getElementById("IdEstado").value;
 
-    clientes.push(cliente)
+    alert("Cadastrado com sucesso!");
+    AddCliente(cliente);
+}
+
+
+//Adicionae objeto cliente
+function AddCliente(cliente)
+{
+    let tabela = document.getElementById("IdTabelaCliente");
+    let linha  = tabela.insertRow(clientes.length);
+
+    let cellNome       = linha.insertCell(0);
+    let cellEmail      = linha.insertCell(1);
+    let cellCPF        = linha.insertCell(2);
+    let cellTelefone   = linha.insertCell(3);
+    let cellCEP        = linha.insertCell(4);
+    let cellLogradouro = linha.insertCell(5);
+    let cellNumero     = linha.insertCell(5);
+    let cellBairro     = linha.insertCell(6);
+    let cellEstado     = linha.insertCell(6);
+    let cellBtnRemover = linha.insertCell(6);
+
+    cellNome       = cliente.nome;
+    cellEmail      = cliente.email;
+    cellCPF        = cliente.cpf;
+    cellTelefone   = cliente.telefone;
+    cellCEP        = cliente.cep;
+    cellLogradouro = cliente.logradouro;
+    cellNumero     = cliente.numero;
+    cellBairro     = cliente.bairro;
+    cellCidade     = cliente.cidade;
+    cellEstado     = cliente.estado;
+
+    AddCliente(cliente);
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
