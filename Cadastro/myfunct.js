@@ -36,8 +36,10 @@ function Cadastrar()
     cliente.cidade     = document.getElementById("IdCidade").value; 
     cliente.estado     = document.getElementById("IdEstado").value;
 
-    alert("Cadastrado com sucesso!");
+    
+    clientes.push(cliente)
     AddCliente(cliente);
+    alert("Cadastrado com sucesso!");
 }
 
 
@@ -53,23 +55,22 @@ function AddCliente(cliente)
     let cellTelefone   = linha.insertCell(3);
     let cellCEP        = linha.insertCell(4);
     let cellLogradouro = linha.insertCell(5);
-    let cellNumero     = linha.insertCell(5);
-    let cellBairro     = linha.insertCell(6);
-    let cellEstado     = linha.insertCell(6);
-    let cellBtnRemover = linha.insertCell(6);
+    let cellNumero     = linha.insertCell(6);
+    let cellBairro     = linha.insertCell(7);
+    let cellCidade     = linha.insertCell(8)
+    let cellEstado     = linha.insertCell(9);
+    let cellBtnRemover = linha.insertCell(10);
 
-    cellNome       = cliente.nome;
-    cellEmail      = cliente.email;
-    cellCPF        = cliente.cpf;
-    cellTelefone   = cliente.telefone;
-    cellCEP        = cliente.cep;
-    cellLogradouro = cliente.logradouro;
-    cellNumero     = cliente.numero;
-    cellBairro     = cliente.bairro;
-    cellCidade     = cliente.cidade;
-    cellEstado     = cliente.estado;
-
-    AddCliente(cliente);
+    cellNome.innerHTML       = cliente.nome;
+    cellEmail.innerHTML      = cliente.email;
+    cellCPF.innerHTML        = cliente.cpf;
+    cellTelefone.innerHTML   = cliente.telefone;
+    cellCEP.innerHTML        = cliente.cep;
+    cellLogradouro.innerHTML = cliente.logradouro;
+    cellNumero.innerHTML     = cliente.numero;
+    cellBairro.innerHTML     = cliente.bairro;
+    cellCidade.innerHTML     = cliente.cidade;
+    cellEstado.innerHTML     = cliente.estado; 
 
 }
 
