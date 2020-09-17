@@ -16,6 +16,8 @@
 <body>
 
 
+
+    <!--
         <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">LDR</a>
@@ -36,72 +38,126 @@
             </div>
           </nav>
 
-          <div class="container">
-            <div class="row">
-                <div class="col-12 my-5">
-                    
-                    <h1 class="text-center">Cadastro de Cliente</h1>
-
-                    <form style="width: 500px; margin: auto;" >
-                        
-                        <div class="was-validated" class="form-group">
-                          <label for="IdNome">Nome</label>
-                          <input type="text" class="form-control" id="IdNome" placeholder="Seu nome" required>
-                        </div><br>
+        -->
 
 
-                        <div class="was-validated" class="form-group">
-                          <label for="IdEmail">E-mail</label>
-                          <input type="text" class="form-control" id="IdEmail" placeholder="Ex. danilo@gmail" required>
-                        </div><br>
 
-                        <div class="was-validated" class="form-group">
-                            <label for="IdCPF">CPF ou CNPJ</label>
-                            <input type="text" class="form-control" id="IdCPF" placeholder="___.___.___ - __" required>
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdTelefone">Telefone</label>
-                            <input type="text" class="form-control" id="IdTelefone" placeholder="(__) _____- ____" required>
-                        </div><br>
-                        
-                        <div class="was-validated" class="form-group">
-                            <label for="IdCEP">CEP</label>
-                            <input type="text" class="form-control" id="IdCEP" placeholder="_____-___" required>
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdLogradouro">Logradouro</label>
-                            <input type="text" class="form-control" id="IdLogradouro" placeholder="Ex. Casa, Prédio" required>
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdNumero">Numero</label>
-                            <input type="text" class="form-control" id="IdNumero" placeholder="nº " required> 
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdBairro">Bairro</label>
-                            <input type="text" class="form-control" id="IdBairro" placeholder="Seu bairro.." required>
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdCidade">Cidade</label>
-                            <input type="text" class="form-control" id="IdCidade" placeholder="Sua cidade.." required>
-                        </div><br>
-
-                        <div class="was-validated" class="form-group">
-                            <label for="IdEstado">Estado</label>
-                            <input type="text" class="form-control" id="IdEstado" placeholder="Seu estado.." required>
-                        </div><br>
-
-                        <button type="button" class="btn btn-success"  onclick="Cadastrar()"> Cadastar</button>
-                    </form>
-                </div>
-            </div>
-          </div>
 
          
+
+          <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3"></div>
+                
+                <div class="col-lg-6">
+                    <div id="ui">
+
+                        <h3 class="text-center" id="Titulo"> CADASTRO DE CLIENTE </h3><br>
+
+                        <form class="form-group" id="IdForm">
+
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <label for="IdNome">Nome</label>
+                                    <input type="text" name="nome" class="form-control" id="IdNome" placeholder="Digite seu nome">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label for="IdTelefone">Telefone</label>
+                                    <input type="text" name="telefone" class="form-control" id="IdTelefone" placeholder="Insira seu telefone">
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <label for="IdEmail">E-mail</label>
+                            <input type="text" name="email" class="form-control" id="IdEmail" placeholder="Digite seu E-mail">
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <label for="IdCPF">CPF ou CNPJ</label>
+                                    <input type="text" name="cpfoucnpj" class="form-control" id="IdCPF" placeholder="Digite seu CPF/CNPJ">
+                                </div>
+
+                                <br>
+
+                                <div class="col-lg-6">
+                                    <label for="IdCPF">CEP</label>
+                                    <input type="text" name="cep" class="form-control" id="IdCEP" placeholder="Insira seu CEP">
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-lg-4">
+                                    <label for="IdNumero">Numero</label>
+                                    <input type="text" name="numero" class="form-control" id="IdNumero" placeholder="Insira seu numero">
+                                </div>
+
+                                <br>
+
+                                <div class="col-lg-8">
+                                    <label for="IdLogradouro">Logradouro</label>
+                                    <input type="text" name="logradouro" class="form-control" id="IdLogradouro" placeholder="Digite seu logradouro">
+                                </div>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-lg-5">
+                                    <label for="IdBairro">Bairo</label>
+                                    <input type="text" name="bairro" class="form-control" id="IdBairro" placeholder="Digite seu bairro">
+                                </div>
+
+                                <br>
+
+                                <div class="col-lg-5">
+                                    <label for="IdCidade">Cidade</label>
+                                    <input type="text" name="Cidade" class="form-control" id="IdCidade" placeholder="Digite sua cidade">
+                                </div>
+
+                                <br>
+
+                                <div class="col-lg-2">
+                                    <label for="IdEstado">Estado</label>
+                                    <input type="text" name="Estado" class="form-control" id="IdEstado" placeholder="UF">
+                                </div>
+
+                            </div>
+
+                            <br><br>
+                            
+                            <input type="button" onclick="Cadastrar()"  class=" btn btn-success  btn-block "  value="Cadastar">
+                            
+
+                            
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3"></div>
+
+            </div>
+
+          </div>
+
+
+
+
+
 
 
 

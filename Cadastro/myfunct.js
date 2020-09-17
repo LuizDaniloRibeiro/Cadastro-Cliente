@@ -39,6 +39,7 @@ function Cadastrar()
     
     clientes.push(cliente)
     AddCliente(cliente);
+    Limpar();
     alert("Cadastrado com sucesso!");
 }
 
@@ -77,7 +78,13 @@ function AddCliente(cliente)
 
 
 
+//Função limpar
 
+function Limpar(){
+
+    document.getElementById("IdForm").reset();
+
+}
 
 
 
