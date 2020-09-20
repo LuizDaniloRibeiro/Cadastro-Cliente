@@ -126,50 +126,23 @@ function AddBtnRemover(cell, cliente){
 
 
 //Função limpar
-
 function Limpar(){
-
     document.getElementById("IdForm").reset();
-
 }
 
 
-
-
-
-//mascaras para form
-
+/*mascaras para form
 const masks = {
-    cpf (value){
+    telefone (value){
         return value
             .replace(/\D/g, '')
-            .replace(/(\d{3})(\d)/, '$1.$2')
-            .replace(/(\d{3})(\d)/, '$1.$2')
-            .replace(/(\d{3})(\d)/, '$1-$2')
-            .replace(/(-\d{2})\d+$/, '$1')
+            .replace(/(\d{2})(\d)/, '($1) $2')
+            .replace(/(\d{4})(\d)/, '$1-$2')
+            .replace(/(\d{4})-(\d)(\d{4})/, '$1$2-$3')
+            .replace(/(-\d{4})\d+?$/, '$1')
+           
     }
 }
-
-/*cnpj (value) {
-
-    return value
-    .replace(/\D/g, '')
-    .replace(/(\d{2})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d)/, '$1.$2')
-    .replace(/(\d{3})(\d)/, '$1/$2')
-    .replace(/(\d{4})(\d)/, '$1-$2')
-    .replace(/(-\d{2})\d+$/, '$1')
-
-}*/
-
-
-telefone (value){
-    return value
-    .replace(/\D/g, '')
-    .replace(/(\d{2})(\d)/, '($1) $2')
-}
-
-
 
 
 
@@ -184,7 +157,7 @@ document.querySelectorAll('input').forEach(($input) => {
         e.target.value = masks[field](e.target.value)
     }, false)
 })
-
+*/
 
 
 
